@@ -2,7 +2,7 @@ import React from 'react';
 import { LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Home, Printers } from './src/pages';
+import { Drivers, Home, Printers, Test } from './src/pages';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +18,8 @@ const App = () => {
           options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="Printers" component={Printers} />
+        <Stack.Screen name="Drivers" component={Drivers} />
+        <Stack.Screen name="Test" component={Test} />
       </Stack.Navigator>
     </NavigationContainer>
   );

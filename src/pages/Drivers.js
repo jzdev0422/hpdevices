@@ -6,13 +6,13 @@ import {
 } from 'react-native';
 import { Header, Navbar } from '../components';
 
-const Printers = ({navigation}) => { 
+const Drivers = ({navigation}) => { 
   return (
    <View style={styles.root}>
      <View style={styles.main}>
          <Navbar navigation={navigation} />
          <View style={styles.container}>
-           <Header title="Printers" />
+           <Header title="Drivers" />
            <Text>
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
  }
 });
 
-export default Printers;
+export default Drivers;

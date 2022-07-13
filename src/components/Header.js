@@ -1,24 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from "react-native";
-import Feather from 'react-native-vector-icons/Feather';
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
-import Ionicons from 'react-native-vector-icons/Ionicons';
  
-const Header = ({navigation}) => {
+const Header = ({title}) => {
     return (
-        <View
-            style={styles.container}
-        >
-            <Text style={styles.fontSize}><Feather name="menu" color="black" size={20} /></Text>
-            <Text style={styles.fontSize}><SimpleLineIcons name="home" size={20} color="black" onPress={() => navigation.push('Home')} /> Home</Text>
-            <Text style={styles.fontSize}><Ionicons name="add-circle-outline" size={20} color="black" onPress={() => navigation.push('Printers')} /> Printers </Text>
+        <View style={styles.root}>
+            <Text style={styles.fontSize}>{title}</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
-      flexDirection: "column"
+    root: {
+        display: "flex",
+        alignItems: "center",
+        padding: 10
     },
     fontSize: {
         fontSize: 20
